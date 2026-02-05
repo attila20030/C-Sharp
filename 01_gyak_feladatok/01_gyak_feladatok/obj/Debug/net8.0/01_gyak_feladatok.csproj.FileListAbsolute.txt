@@ -1,0 +1,14 @@
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\bin\Debug\net8.0\01_gyak_feladatok.exe
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\bin\Debug\net8.0\01_gyak_feladatok.deps.json
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\bin\Debug\net8.0\01_gyak_feladatok.runtimeconfig.json
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\bin\Debug\net8.0\01_gyak_feladatok.dll
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\bin\Debug\net8.0\01_gyak_feladatok.pdb
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.AssemblyInfoInputs.cache
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.AssemblyInfo.cs
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.csproj.CoreCompileInputs.cache
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.dll
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\refint\01_gyak_feladatok.dll
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.pdb
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\01_gyak_feladatok.genruntimeconfig.cache
+C:\C#\01_gyak_feladatok\01_gyak_feladatok\obj\Debug\net8.0\ref\01_gyak_feladatok.dll

@@ -1,0 +1,15 @@
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\bin\Debug\net8.0\03_gyak_ciklusok.exe
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\bin\Debug\net8.0\03_gyak_ciklusok.deps.json
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\bin\Debug\net8.0\03_gyak_ciklusok.runtimeconfig.json
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\bin\Debug\net8.0\03_gyak_ciklusok.dll
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\bin\Debug\net8.0\03_gyak_ciklusok.pdb
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.AssemblyInfoInputs.cache
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.AssemblyInfo.cs
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.csproj.CoreCompileInputs.cache
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.sourcelink.json
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.dll
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\refint\03_gyak_ciklusok.dll
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.pdb
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\03_gyak_ciklusok.genruntimeconfig.cache
+C:\C#\03_gyak_ciklusok\03_gyak_ciklusok\03_gyak_ciklusok\obj\Debug\net8.0\ref\03_gyak_ciklusok.dll
