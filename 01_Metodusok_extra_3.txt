@@ -1,0 +1,112 @@
+namespace OOP {
+    internal class Program {
+        static void Main(string[] args) {
+            // hozzunk létre egy 5 elemű tömböt
+            int[] numbers = new int[5];
+            // generáljunk 5 számot 1 és 20 között, töltsük fel a tömböt
+            for (int i = 0; i < numbers.Length; i++) {
+                numbers[i] = Generator();
+            }
+            // írjuk ki a tömb elemeit
+            Console.WriteLine(string.Join(" ", numbers));
+            // írjuk ki a számok átlagát
+            Console.WriteLine(Avg(numbers));
+            // írjuk ki a páros számokat
+            int[] paros = Even(numbers);
+            Console.WriteLine($"Páros számok: " + string.Join(" ", paros));
+            // írjuk ki a páros számok összegét
+            Console.WriteLine(Sum(paros));
+            // melyik a legnagyobb páros szám
+            Console.WriteLine(Max(paros));
+            // írjuk ki a páros számok mediánját
+            Console.WriteLine(Median(paros));
+            // 2, 8, 8, 12 -> a Array.Sort() növekvő sorrendbe rendezi a tömb elemeit
+        }
+
+        // Sum: vár egy int[] tömböt, összeadja a tömb elemeit, visszatér
+        // egy INT egész értékkel (összeggel)
+        static int Sum(int[] nums) {
+            int sum = 0;
+            // 3, 5, 1, 4
+            foreach(int num in nums) {
+                sum += num; // sum = sum + num; // sum = 0 + 3;
+                // sum = 3 + 5; -> 8
+                // sum = 8 + 1; -> 9
+                // sum = 9 + 4; -> 13
+            }
+            return sum; // 13
+        }
+
+        // AVG: vár egy tömböt és kiszámolja a tömb elemeinek átlagát
+        // visszatér ezzel az értékkel (használd a Sum() metódust)
+        static int Avg(int[] nums) {
+            // a tömb összegét elosztjuk a tömb hosszával = ÁTLAG
+            return Sum(nums) / nums.Length;
+        }
+        // MAXIMUM kiválasztás
+        static int Max(int[] nums) {
+            // 4, 2, 1, 3
+            int max = nums[0]; // a tömb 1. értéke kerül a változóba
+            /*foreach(int num in nums) {
+                if(max < num) { // ha a segédváltozó értéke KISEBB, mint a tömb eleme
+                    max = num;
+                }
+            }*/
+            // szebb megoldás: a tömb 0. elemét nem nézi újra
+            // az i=1 -> azaz a tömb 1. indexétől hasonlít
+            for(int i=1; i<nums.Length; i++) {
+                if (max < nums[i]) {
+                    max = nums[i];
+                }
+            }
+            return max; // minimum ugyan ez, csak a csibecsőrt cseréled
+        }
+
+        static int Generator() {
+            // ezt ne nagyon használjátok így rövidítve
+            return new Random().Next(1, 21);
+        }
+
+        static int Median(int[] numbers) {
+            // medián: középső érték meghatározása egy RENDEZETT TÖMBÖN
+            // páros számúak a tömbelemek: két középső elem átlagát
+            // páratlan: középső elem
+            Array.Sort(numbers); // helyben rendez
+            // 3, 4, 6, 1, 2
+            int mid = numbers.Length / 2; // középső érték meghatározása
+            // mid = 2 -> az int letöri a 0.5-öt a 2.5 után
+
+            // Páros elemszámra medián: 3, 4, 6, 1
+            // mid = 2
+            if(numbers.Length % 2 == 0) {
+                return (numbers[mid - 1] + numbers[mid]) / 2;
+            }
+
+            // Páratlan elemszámra medián: 3, 4, 6, 1, 2
+            return numbers[mid]; // 6 a középső elem
+        }
+
+        // tároljuk el a páros elemeket a tömbből -> tömbbel térek vissza
+        static int[] Even(int[] numbers) {
+            // 1. készítünk egy tömböt, amibe a páros számokat rakom
+            int[] even = new int[numbers.Length];
+            // 2. készítünk egy segédváltozót az even tömbhöz
+            int n = 0;
+            // 2. bejárjuk a tömböt és kiválasztjuk a páros számokat
+            for(int i=0; i<numbers.Length; i++) {
+                if (numbers[i] % 2 == 0) {
+                    even[n] = numbers[i];
+                    n++;
+                    // 5, 1, 2, 6, 7
+                    // 2, 6, 0, 0, 0
+                }
+            }
+            return even[0..n]; // range operátor
+            // megadhatod, hogy a tömb mely elemit adja vissza a metódus
+            // 0-tól n-ig adja vissza az elemeket
+            // a 0. indextől az n változóban lévő indexig vegye a tömb elemeit
+            // [2..5], [3..] - 3-tól a végéig, [^1] - utolsó elem
+        }
+
+    }
+}

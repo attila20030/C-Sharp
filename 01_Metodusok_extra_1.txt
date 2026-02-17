@@ -1,0 +1,54 @@
+namespace OOP {
+    internal class Program {
+        static void Main(string[] args) {
+            // Szamol(); // a = 20, b = 10 -> 30
+            // Szamol(10); // a = 10, b = 10 -> 20
+            // Szamol(,30); // első paraméter NEM elhagyható
+            // Szamol(50, 40);
+
+            // int x = 7;
+            // ÉRTÉK SZERINT: másolat készül a változóról
+            // ezért nem tudja módosítani a metódus az x változó értékét
+            // Teszt(x); // belerakom a 7-et -> 0-ra átírom
+            // Console.WriteLine(x); // a 7 változatlan
+
+            // REFERENCIA: a tömb elemein KÉPES módosítani a metódus
+            /*string[] teszt = { "Liliom" };
+            TesztTomb(teszt); // átadjuk a tömböt, átírjuk a 0. tömbelemet "Gaz"-ra
+            Console.WriteLine(teszt[0]);*/
+
+            // Szamol(50);
+        }
+
+        // default paraméter
+        /*static void Szamol(int a = 20, int b = 10) {
+            Console.WriteLine(a + b);
+        }*/
+
+        // Érték szerinti paraméterátadás:
+        // primitív típusokra vonatkozik (pl.: int, byte, bool, char)
+        // Referencia típusok:
+        // String, Array, object
+
+        // ÉRTÉK SZERINTI PARAMÉTERÁTADÁS PÉLDA
+        /*static void Teszt(int z) {
+            z = 0; // megváltoztatom a kívülről érkező változó értékét
+        }*/
+
+        // REFERENCIA SZERINTI PARAMÉTERÁTADÁS PÉLDA
+        /*static void TesztTomb(string[] viragok) {
+            viragok[0] = "Gaz"; // átírjuk a tömb 0. elemét
+        }*/
+
+        // REKURZIÓ: mindig kell egy KILÉPÉSI FELTÉTEL
+        /*static void Szamol(int szam) {
+            Console.WriteLine(szam);
+            if(szam < 100) Szamol(szam + 1); // saját magát hívja meg
+        }*/
+
+        /*static void Szamol(int szam) {
+            Console.WriteLine(szam);
+            if (szam > 0) Szamol(szam - 1); // saját magát hívja meg
+        }*/
+    }
+}

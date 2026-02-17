@@ -1,0 +1,37 @@
+namespace OOP {
+    internal class Program {
+        static void Main(string[] args) {
+            int[] kerTer = new int[2];
+            int kerulet = Kerulet();
+            int terulet = Terulet(20); // a megadása KÖTELEZŐ
+            Bepakol(kerTer, kerulet, terulet); // megtörténik a tömb referencia módosítása
+            Kiir(kerTer); // már a módosult tömb lesz kiiratva
+
+        }
+
+        // Kerulet metódus: 2 * (a + b) -> default paraméter: 20-20
+        static int Kerulet(int a = 20, int b = 20) {
+            return 2 * (a + b);
+        }
+
+        // Terulet: a * b -> default paraméter: b = 20
+        static int Terulet(int a, int b = 20) {
+            return a * b;
+        }
+
+        // REFERENCIA paraméterátadásos metódus
+        static void Bepakol(int[] eredmeny, int K, int T) {
+            eredmeny[0] = K; // beszúrja 0. indexre a K változót
+            eredmeny[1] = T; // beszúrja 1. indexre a T változót
+            // nem térünk vissza, mert a tömböt módosítja a metódus
+        }
+
+        static void Kiir(int[] eredmeny) {
+            Console.WriteLine($"Kerület: {eredmeny[0]}, Terület: {eredmeny[1]}");
+        }
+
+
+
+
+    }
+}
